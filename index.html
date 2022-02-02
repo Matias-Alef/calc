@@ -14,36 +14,36 @@
     <div class="container">
         <div class="calculadora">
             <h2>Calculadora JS</h2>
-            <div class="display">Alef</div>
+            <div class="display" id="display"></div>
             <table class="grid-calc">
                 <tr class="head">
-                    <td class="operator" colspan="2"><button id="clean" style="width: 160px;">AC</button></td>
-                    <td class="operator"><button id="percent">%</button></td>
-                    <td class="operator"><button id="divide">÷</button></td>
+                    <td class="operator" colspan="2"><button class="btn" id="clear" style="width: 160px;" onclick="clearAll()">AC</button></td>
+                    <td class="operator"><button class="btn" id="percent" onclick="insert('%')">%</button></td>
+                    <td class="operator"><button class="btn" id="divide" onclick="insert('/')">÷</button></td>
                 </tr>  
                 <tr>
-                    <td class="number"><button id="7">7</button></td>
-                    <td class="number"><button id="8">8</button></td>
-                    <td class="number"><button id="9">9</button></td>
-                    <td class="operator"><button id="times">X</button></td>
+                    <td class="number"><button class="btn" id="7" onclick="insert('7')">7</button></td>
+                    <td class="number"><button class="btn" id="8" onclick="insert('8')">8</button></td>
+                    <td class="number"><button class="btn" id="9" onclick="insert('9')">9</button></td>
+                    <td class="operator"><button class="btn" id="times" onclick="insert('*')">X</button></td>
                 </tr>
                 <tr>
-                    <td class="number"><button id="4">4</button></td>
-                    <td class="number"><button id="5">5</button></td>
-                    <td class="number"><button id="6">6</button></td>
-                    <td class="operator"><button id="minus">-</button></td>
+                    <td class="number"><button class="btn" id="4" onclick="insert('4')">4</button></td>
+                    <td class="number"><button class="btn" id="5" onclick="insert('5')">5</button></td>
+                    <td class="number"><button class="btn" id="6" onclick="insert('6')">6</button></td>
+                    <td class="operator"><button class="btn" id="minus" onclick="insert('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td class="number"><button id="1">1</button></td>
-                    <td class="number"><button id="2">2</button></td>
-                    <td class="number"><button id="3">3</button></td>
-                    <td class="operator"><button id="plus">+</button></td>
+                    <td class="number"><button class="btn" id="1" onclick="insert('1')">1</button></td>
+                    <td class="number"><button class="btn" id="2" onclick="insert('2')">2</button></td>
+                    <td class="number"><button class="btn" id="3" onclick="insert('3')">3</button></td>
+                    <td class="operator"><button class="btn" id="plus" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td class="number"><button id="0">0</button></td>
-                    <td class="operator"><button id="dot">.</button></td>
-                    <td class="operator"><button id="backspace">&lt;&lt;</button></td>
-                    <td class="operator"><button id="equals">=</button></td>
+                    <td class="number"><button class="btn" id="0" onclick="insert('0')">0</button></td>
+                    <td class="operator"><button class="btn" id="dot" onclick="insert('.')">.</button></td>
+                    <td class="operator"><button class="btn" id="backspace" onclick="backOne()">&lt;&lt;</button></td>
+                    <td class="operator"><button class="btn" id="equals" onclick="calcular()">=</button></td>
                 </tr>           
             </table>
             
